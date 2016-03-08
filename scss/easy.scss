@@ -1,0 +1,68 @@
+@import 'layout/_reset';
+
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+nav {
+  background-color: lightblue;
+  padding-top: 10px;
+  .brand-logo {
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+}
+
+.c1 {
+  animation-name: color1;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.c2 {
+  animation-name: color2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.c3 {
+  animation-name: color3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color1 {
+  20% {color: pink}
+  50% {color: white}
+  100% {color: white}
+}
+
+@keyframes color2 {
+  0% {color: white}
+  50% {color: pink}
+  100% {color: white}
+}
+
+@keyframes color3 {
+  0% {color: white}
+  50% {color: white}
+  100% {color: pink}
+}
+
+section {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+
+
+.row {
+  width: 100%;
+  margin: 20px;
+}
+
+.col {
+  height: 300px;
+  background: peachpuff;
+  border: 2px solid black;
+}

@@ -1,0 +1,29 @@
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 209px;
+  border: 2px solid black;
+  margin-top: 30px; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.c1, .c2 {
+  background-image: url("../img/harry.jpg"); }
+
+.c3, .c4 {
+  background-image: url("../img/dobby.jpg"); }
+
+.c6, .c5 {
+  background-image: url("../img/herm.jpg"); }
+
+.c7, .c8 {
+  background-image: url("../img/ron.jpg"); }
+
+.c9, .c10 {
+  background-image: url("../img/malfoy.jpg"); }
+
+/*# sourceMappingURL=medium.css.map */

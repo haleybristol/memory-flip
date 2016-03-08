@@ -1,0 +1,90 @@
+@import 'layout/_reset';
+
+// nav ul {
+//   justify-content: space-around;
+//   display: flex;
+//   font-size: 1.2em;
+//   li:nth-child(1) {
+//     flex: 3;
+//   }
+// }
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+nav {
+  background-color: lightblue;
+  padding-top: 10px;
+  .brand-logo {
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: baseline;
+}
+
+section {
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px;
+  }
+  .info {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  p {
+    text-align: center;
+    font-size: 3em;
+    border: 2px solid white;
+    background: peachpuff;
+    border-radius: 5px;
+    width: 400px;
+    margin: 20px auto;
+  }
+}
+
+.tv {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.c1 {
+  animation-name: color1;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.c2 {
+  animation-name: color2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.c3 {
+  animation-name: color3;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color1 {
+  20% {color: pink}
+  50% {color: white}
+  100% {color: white}
+}
+
+@keyframes color2 {
+  0% {color: white}
+  50% {color: pink}
+  100% {color: white}
+}
+
+@keyframes color3 {
+  0% {color: white}
+  50% {color: white}
+  100% {color: pink}
+}

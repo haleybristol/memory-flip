@@ -1,0 +1,31 @@
+@import 'layout/_mixins';
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card {
+    @extend %card-set;
+}
+.c1, .c2 {
+  background-image: url("../img/harry.jpg");
+}
+
+.c3, .c4 {
+  background-image: url("../img/dobby.jpg");
+}
+
+.c6, .c5 {
+  background-image: url("../img/herm.jpg");
+}
+
+.c7, .c8 {
+  background-image: url("../img/ron.jpg");
+}
+
+.c9, .c10 {
+  background-image: url("../img/malfoy.jpg");
+}
