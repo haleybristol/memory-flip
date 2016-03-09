@@ -1,5 +1,8 @@
 @import 'layout/_mixins';
 
+body {
+    font-family: 'Cabin', sans-serif;
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -10,42 +13,28 @@
 .card {
     @extend %card-set;
 }
-.c1, .c2 {
-  background-image: url("../img/harry.jpg");
+
+nav {
+  display: flex;
+  a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 20px;
+    }
+    .brand-logo {
+      flex: 3;
+      padding: 20px;
+    }
+
 }
 
-.c3, .c4 {
-  background-image: url("../img/dobby.jpg");
-}
 
-.c6, .c5 {
-  background-image: url("../img/herm.jpg");
-}
-
-.c7, .c8 {
-  background-image: url("../img/ron.jpg");
-}
-
-.c9, .c10 {
-  background-image: url("../img/malfoy.jpg");
-}
-
-input[type=checkbox] {
-    margin-top-t2opxp: 20px;
-    width: 213px;
-    height: 304px;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    -webkit-appearance: none;
-    outline: 0;
-}
 
 input#herm {
     margin-top: 20px;
     width: 213px;
-    height: 400px;
+    height: 305px;
     padding: 0;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,11 +52,11 @@ input#herm:not(:checked) {
 input#ron {
     margin-top: 20px;
     width: 213px;
-    height: 304px;
+    height: 305px;
     padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     -webkit-appearance: none;
     outline: 0;
 }
@@ -85,7 +74,7 @@ input#dobby {
     padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     -webkit-appearance: none;
     outline: 0;
 }
@@ -103,7 +92,7 @@ input#malfoy {
     padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     -webkit-appearance: none;
     outline: 0;
 }
@@ -121,7 +110,7 @@ input#nev {
     padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     -webkit-appearance: none;
     outline: 0;
 }
@@ -129,41 +118,6 @@ input#nev:checked {
     background-image: url("../img/nev.jpg");
 }
 input#nev:not(:checked) {
-    background-image: url("../img/hlogo.jpg");
-}
-
-input#input#herm {
-    margin-top: 20px;
-    width: 213px;
-    height: 304px;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    -webkit-appearance: none;
-    outline: 0;
-}
-input#herm:checked {
-    background-image: url("../img/herm.jpg");
-}
-input#herm:not(:checked) {
-    background-image: url("../img/hlogo.jpg");
-}
-input#herm {
-    margin-top: 20px;
-    width: 213px;
-    height: 304px;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    -webkit-appearance: none;
-    outline: 0;
-}
-input#herm:checked {
-    background-image: url("../img/herm.jpg");
-}
-input#herm:not(:checked) {
     background-image: url("../img/hlogo.jpg");
 }
 
